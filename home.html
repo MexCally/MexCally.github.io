@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fa-home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color:chocolate;
+            color:#ddd;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .navbar {
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?shoes') no-repeat center center/cover;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #333;
+            background: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ddd;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .products, .reviews {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product, .review {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .p2{
+            text-align: left;
+        }
+        a:hover{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Shoe Company</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order1.html">Order</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero" id="home">
+        <p>Step into Style & Comfort</p>
+        <button class="btn">Shop Now</button>
+    </section>
+    
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing high-quality, stylish, and comfortable shoes for all occasions.</p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque maiores rem repellat hic minima magnam eius id expedita laudantium at voluptate, similique natus molestias in mollitia dolor, a architecto ab.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit doloremque eaque sunt cum autem harum exercitationem aliquam earum, dolorem perspiciatis optio illum id fugit voluptas nobis! Optio, laboriosam officia!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae atque, voluptatum nulla dicta similique repellendus neque dolores dolor. Possimus amet itaque soluta molestiae quam perferendis voluptatibus laborum dolor nemo laudantium.
+        </p>
+    </section>
+    
+    <section class="section" id="products">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product"><h3>Running Shoes</h3><p>Perfect for everyday runs.</p></div>
+            <div class="product"><h3>Casual Sneakers</h3><p>Stylish and comfortable.</p></div>
+            <div class="product"><h3>Formal Shoes</h3><p>Elegant and premium quality.</p></div>
+        </div>
+    </section>
+    
+    <section class="section" id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="reviews">
+            <div class="review"><p>"Best shoes I've ever bought!" - Jane</p></div>
+            <div class="review"><p>"Super comfortable and stylish!" - Mike</p></div>
+            <div class="review"><p>"Great quality at an affordable price." - Sarah</p></div>
+        </div>
+        <div class="p2">
+            <p><a href="index.html">Go Back</a></p>
+            </div>
+    </section>
+</body>
+</html>
